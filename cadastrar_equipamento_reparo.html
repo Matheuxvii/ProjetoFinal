@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastrar Equipamento para Reparo</title>
+</head>
+<body>
+  <h2>Cadastrar Equipamento para Reparo</h2>
+  
+  <form action="cadastrar_equipamento_reparo.php" method="POST">
+    <label for="numero_serie">Número de Série:</label>
+    <input type="text" id="numero_serie" name="numero_serie" required><br><br>
+
+    <label for="descricao_problema">Descrição do Problema:</label>
+    <textarea id="descricao_problema" name="descricao_problema" required></textarea><br><br>
+
+    <label for="data_notificacao">Data de Notificação:</label>
+    <input type="date" id="data_notificacao" name="data_notificacao" required><br><br>
+
+    <label for="outros_detalhes">Outros Detalhes:</label>
+    <textarea id="outros_detalhes" name="outros_detalhes"></textarea><br><br>
+
+    <label for="reparador">Reparador:</label>
+    <input type="text" id="reparador" name="reparador"><br><br>
+
+    <input type="submit" value="Cadastrar">
+  </form>
+  <a href="menu inicial (1).html" class="btn-voltar">Cancelar</a>
+</body>
+</html>

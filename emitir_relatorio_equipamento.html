@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emitir Relatório de Equipamentos</title>
+</head>
+<body>
+  <h2>Emitir Relatório de Equipamentos</h2>
+  
+  <form action="gerar_relatorio.php" method="POST">
+    <label for="tipo_equipamento">Tipo de Equipamento:</label>
+    <select id="tipo_equipamento" name="tipo_equipamento">
+      <option value="">Todos</option>
+      <option value="computador">Computador</option>
+      <option value="impressora">Impressora</option>
+      <option value="telefone">Telefone</option>
+    </select><br><br>
+
+    <label for="status">Status:</label>
+    <select id="status" name="status">
+      <option value="">Todos</option>
+      <option value="ativo">Ativo</option>
+      <option value="inativo">Inativo</option>
+    </select><br><br>
+
+    <label for="localizacao">Localização:</label>
+    <input type="text" id="localizacao" name="localizacao"><br><br>
+
+    <label for="outras_caracteristicas">Outras Características:</label>
+    <input type="text" id="outras_caracteristicas" name="outras_caracteristicas"><br><br>
+
+    <input type="checkbox" id="salvar_digitalmente" name="salvar_digitalmente">
+    <label for="salvar_digitalmente">Salvar Relatório Digitalmente</label><br><br>
+
+    <input type="checkbox" id="imprimir" name="imprimir">
+    <label for="imprimir">Imprimir Relatório</label><br><br>
+
+    <input type="submit" value="Emitir Relatório">
+  </form>
+  <a href="menu inicial (1).html" class="btn-voltar">Voltar</a>
+</body>
+</html>

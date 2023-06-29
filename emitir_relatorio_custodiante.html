@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Emitir Relatório de Equipamentos por Custodiante</title>
+</head>
+<body>
+  <h2>Emitir Relatório de Equipamentos por Custodiante</h2>
+  
+  <form action="gerar_relatorio.php" method="POST">
+    <label for="custodiante">Custodiante:</label>
+    <input type="text" id="custodiante" name="custodiante"><br><br>
+
+    <label for="intervalo_datas">Intervalo de Datas:</label>
+    <input type="date" id="data_inicial" name="data_inicial"> até 
+    <input type="date" id="data_final" name="data_final"><br><br>
+
+    <label for="departamento">Departamento:</label>
+    <select id="departamento" name="departamento">
+      <option value="">Todos</option>
+      <option value="departamento1">Departamento 1</option>
+      <option value="departamento2">Departamento 2</option>
+      <option value="departamento3">Departamento 3</option>
+    </select><br><br>
+
+    <label for="outro_criterio">Outro Critério:</label>
+    <input type="text" id="outro_criterio" name="outro_criterio"><br><br>
+
+    <input type="checkbox" id="salvar_digitalmente" name="salvar_digitalmente">
+    <label for="salvar_digitalmente">Salvar Relatório Digitalmente</label><br><br>
+
+    <input type="checkbox" id="imprimir" name="imprimir">
+    <label for="imprimir">Imprimir Relatório</label><br><br>
+
+    <input type="submit" value="Emitir Relatório">
+  </form>
+  <a href="menu inicial (1).html" class="btn-voltar">Voltar</a>
+</body>
+</html>

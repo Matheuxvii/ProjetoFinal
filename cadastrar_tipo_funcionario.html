@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cadastrar Tipo de Funcionário</title>
+</head>
+<body>
+  <h2>Cadastrar Tipo de Funcionário</h2>
+  
+  <form action="cadastrar_tipo_funcionario.php" method="POST">
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" name="matricula" required><br><br>
+
+    <label for="descricao">Descrição:</label>
+    <textarea id="descricao" name="descricao"></textarea><br><br>
+
+    <label for="permissao">Permissões:</label><br>
+    <input type="radio" id="administrador" name="permissao" value="administrador">
+    <label for="administrador">Administrador</label><br>
+    <input type="radio" id="usuario" name="permissao" value="usuario">
+    <label for="usuario">Usuário</label><br><br>
+
+    <input type="submit" value="Cadastrar">
+  </form>
+  <a href="menu inicial (1).html" class="btn-voltar">Cancelar</a>
+</body>
+</html>

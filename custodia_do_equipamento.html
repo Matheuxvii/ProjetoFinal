@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Gerar Custódia de Equipamento</title>
+</head>
+<body>
+  <h2>Gerar Custódia de Equipamento</h2>
+  <form action="processar_formulario.php" method="POST">
+    <label for="nome">Nome do Responsável:</label>
+    <input type="text" id="nome" name="nome" required><br><br>
+
+    <label for="equipamento">Equipamento:</label>
+    <input type="text" id="equipamento" name="equipamento" required><br><br>
+
+    <label for="data_retirada">Data de Retirada:</label>
+    <input type="date" id="data_retirada" name="data_retirada" required><br><br>
+
+    <label for="data_devolucao">Data de Devolução:</label>
+    <input type="date" id="data_devolucao" name="data_devolucao" required><br><br>
+
+    <label for="observacoes">Observações:</label><br>
+    <textarea id="observacoes" name="observacoes" rows="4" cols="50"></textarea><br><br>
+
+    <input type="submit" value="Gerar Custódia">
+  </form>
+  <a href="menu inicial (1).html" class="btn-voltar">Cancelar</a>
+</body>
+</html>
